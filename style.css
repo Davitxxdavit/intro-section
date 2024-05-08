@@ -48,6 +48,7 @@ nav{
     color: rgba(92,92,92,255);
 }
 .toggle2_list{
+    display: none;
     position: absolute;
     top: 40px;
     right: -40px;
@@ -75,10 +76,10 @@ nav{
   }
 }
 .displayNone{
-    display: none;
+    display: block;
 }
 .toggle1_list{
-   
+   display: none;
     position: absolute;
     top: 40px;
     right: 0;
