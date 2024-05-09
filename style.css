@@ -75,11 +75,12 @@ nav{
     }
   }
 }
-.displayNone{
-    display: block;
+
+.burger{
+    display: none;
 }
 .toggle1_list{
-   display: none;
+    display: none;
     position: absolute;
     top: 40px;
     right: 0;
@@ -91,7 +92,9 @@ nav{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 
 }
-
+.displayNone{
+    display: block;
+}
 .toggle1_list ul{
     height: 100%;
     width: 100%;
@@ -210,10 +213,13 @@ nav{
 }
 
 .logo{
-    margin-right: 20px;
+    position: absolute;
+   
 }
 
-
+.nav1{
+    margin-left: 200px;
+}
 
 @media only screen and (max-width: 1480px) {
     .wrapper{
@@ -241,7 +247,7 @@ nav{
 
   @media only screen and (max-width: 1220px) {
     .wrapper{
-        width: 800px;
+        width: 900px;
     }
 
     .hero{
@@ -256,10 +262,124 @@ nav{
     .icons img{
         width: 50px;
     }
+
+    .nav1{
+        margin-left: 100px;
+    }
   }
 
 
-  @media only screen and (max-width: 480px) {
+  .mobile-nav{
+    display: none;
+    flex-flow: column;
+    position: absolute;
+    justify-content: flex-start;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background-color: white;
+    width: 200px;
+    z-index: 999;
 
+    .header-toggle{
+            margin-bottom: 10px;
+        }
 
+    .mobile-nav1{
+        display: flex;
+        flex-flow: column;
+        margin-top: 100px;
+    }
+
+   .other-list{
+    margin-bottom: 10px;
+   }
+
+   
   }
+
+
+ .close-menu-img{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        width: 32px;
+        height: 32px;
+    }
+
+
+    .mobile-nav2{
+        margin-top: 20px;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .mobile-btn-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: transparent;
+        color: rgba(92,92,92,255);
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+
+
+    @media only screen and (max-width: 500px) {
+
+        .hero{
+           width: auto;
+            background-image: url(./images/image-hero-mobile.png);
+            background-size: 100% 40%;
+            background-repeat: no-repeat;
+            background-position: top;
+
+           h1{
+            width: auto;
+
+
+            br{
+                display: none;
+            }
+           }
+
+           .content{
+            position: absolute;
+            top: 40%;
+           }
+
+          .content button{
+            margin-top: 25px;
+            margin-left: 30%;
+            margin-bottom: 40px;
+           }
+        }
+
+        .hero .content{
+            width: auto;
+        }
+        .hero .content p{
+            width: 280px;
+            margin: 0 auto;
+        }
+       .hero-img{
+        display: none;
+       }
+        .desktop-nav{
+            display: none;
+        }
+       
+        .mobile-nav{
+            display: none;
+        }
+
+
+        .burger{
+            display: flex;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+    }
